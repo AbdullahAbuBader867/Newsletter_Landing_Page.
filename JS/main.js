@@ -5,7 +5,9 @@ const emailInput = document.getElementById('email');
 const emailUser = document.getElementById("email-user");
 const steps = document.querySelectorAll(".step");
 
-nextStep.addEventListener("click", () => {
+nextStep.addEventListener("click", (e) => {
+
+    e.preventDefault();
 
     const email = emailInput.value.trim();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
