@@ -1,0 +1,158 @@
+:root {
+    --Primary-color: #ff6257;
+    --Blue800: hsl(234, 29%, 20%);
+    --Blue700: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%,58%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+/* Step One */
+#Newsletter {
+    background: var(--Blue700);
+    height: 100vh;
+}
+#Newsletter form {
+    margin: auto;
+}
+#Newsletter form .container > .step:first-child:first-child {
+    background: var(--White);
+    border-radius: 20px;
+}
+#Newsletter form .container > .step:first-child .content {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0 1rem 2.4rem;
+    margin-right: -6rem;
+}
+#Newsletter form .container > .step:first-child .content .title h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--Blue700);
+}
+#Newsletter form .container > .step:first-child .content .numbers-of-members span {
+    font-size: 0.7em;
+}
+#Newsletter form .container > .step:first-child .content .improvement > div {
+    margin-bottom: 0.5rem;
+}
+#Newsletter form .container > .step:first-child .content .improvement > div > img {
+    margin-right: 0.7rem;
+    width: 14px;
+}
+#Newsletter form .container > .step:first-child .content .improvement > div > p {
+    font-size: 0.7em;
+}
+#Newsletter form .container > .step:first-child .content .email > div {
+    margin: 0.6rem 0 0.3rem;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+#Newsletter form .container > .step:first-child .content .email > div label {
+    color: var(--Blue800);
+    cursor: pointer;
+}
+#Newsletter form .container > .step:first-child .content .email > div p {
+    color: var(--Primary-color);
+}
+#Newsletter form .container > .step:first-child .content .email input {
+    width: 100%;
+    border-radius: 6px;
+    border: 0.5px solid #cdbdbd;
+    padding: 1rem;
+}
+#Newsletter form .container > .step:first-child .content .email input.input-error {
+    border-color: var(--Primary-color);
+    color: var(--Primary-color);
+    background-color: #FFE8E6;
+}
+#Newsletter form .container > .step:first-child .content .email input:focus {
+    border-color: #121111;
+}
+#Newsletter form .container > .step:first-child .content > div {
+    margin-bottom: 0.5rem;
+}
+#Newsletter form .container > .step:first-child .content .next-step button,
+#Newsletter form .container > .step:last-child .Dismiss-message button {
+    background: var(--Blue800);
+    color: var(--White);
+    padding: 0.8rem 0rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+#Newsletter form .container > .step:first-child .image-sign-up {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem -2.5rem 1rem 0;
+}
+#Newsletter form .container > .step:first-child .image-sign-up img {
+    width: 65%;
+}
+/* Step Two */
+#Newsletter form .container > .step:last-child {
+    background: var(--White);
+    width: 40%;
+    border-radius: 20px;
+    padding: 1.8rem 2.4rem;
+}
+#Newsletter form .container > .step:last-child > div {
+    margin-bottom: 0.8rem;
+}
+#Newsletter form .container > .step:last-child img {
+    width: 15%;
+}
+#Newsletter form .container > .step:last-child .title-success h2 {
+    color: var(--Blue800);
+    font-size: 2.2em;
+    font-weight: 700;
+}
+#Newsletter form .container > .step:last-child .confirmation-email p {
+    font-size: 0.7em;
+}
+#Newsletter form .container > .step:last-child .confirmation-email p span {
+    color: var(--Blue800);
+    font-weight: 700;
+}
+#Newsletter form .container > .step:last-child .Dismiss-message button {
+    padding: 0.6rem 0;
+    font-size: 0.65em;
+}
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+#Newsletter form .container > .step:first-child .content .next-step button:hover, 
+#Newsletter form .container > .step:last-child .Dismiss-message button:hover {
+    background-image: linear-gradient(to right, #ff5476, #ff5671, #ff576d, #ff5968, #ff5b64, #ff5d60, #ff5e5b, #ff6057, #ff6151, #ff634b, #ff6545, #ff673f);
+    transition: 0.3s;
+}
+
+/* Framework */
+.flex {
+    display: flex;
+}
+.flex-AIce {
+    display: flex;
+    align-items: center;
+}
+.flex-JCsb {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-JCce {
+    display: flex;
+    justify-content: center;
+}
