@@ -20,6 +20,7 @@
 }
 #Newsletter form {
     margin: auto;
+    /* visibility: hidden; */
 }
 #Newsletter form .container > .step:first-child:first-child {
     background: var(--White);

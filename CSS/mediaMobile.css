@@ -1,21 +1,18 @@
 /* Small Mobile */
-@media all and (min-width: 320px) and (max-width: 480px) {
+@media all and (max-width: 480px) {
     #Newsletter form .container > .step:first-child:first-child > div {
         flex-direction: column-reverse;
     }
     #Newsletter form .container > .step:first-child .content {
         width: 100%;
         padding: 0 1rem ;
-        margin: 26.5rem 0 0;
+        margin: 0;
     }
     #Newsletter form .container > .step:first-child .image-sign-up {
-        margin: 0;
-        display: block;
+        margin: 0 0 0.5rem;
     }
     #Newsletter form .container > .step:first-child .image-sign-up img {
         width: 100%;
-        position: absolute;
-        top: -4rem;
     }
     #Newsletter {
         display: block;

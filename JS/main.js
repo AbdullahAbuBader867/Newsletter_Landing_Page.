@@ -5,6 +5,9 @@ const emailInput = document.getElementById('email');
 const emailUser = document.getElementById("email-user");
 const steps = document.querySelectorAll(".step");
 
+const illustrationSignUpDesktop = document.getElementById("illustration-sign-up-desktop");
+const illustrationSignUpMobile = document.getElementById("illustration-sign-up-mobile");
+
 nextStep.addEventListener("click", (e) => {
 
     e.preventDefault();
@@ -33,4 +36,11 @@ emailInput.addEventListener("input", () => {
 dismissMessage.addEventListener("click", () => {
     steps[1].classList.remove("active");
     steps[0].classList.add("active");
-})
+});
+// hidden Image Desktop and Disyplay Image Mobile
+if(window.innerWidth <= 480) {
+    illustrationSignUpDesktop.style.cssText = "visibility: hidden; width: 0px";
+} else {
+    illustrationSignUpDesktop.style.visibility = "visible";
+    illustrationSignUpMobile.style.cssText = "visibility: hidden; width: 0px";
+}
